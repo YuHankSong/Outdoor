@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/558a93c615.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../_js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/activity.css" />
+    <link rel="stylesheet" href="../_css/animate.css" />
+    <link rel="stylesheet" href="../_css/loading.css" />
+  </head>
+  <body>
+    <!-- #region 最上面輪播圖跟左上sticky btn 白色覆蓋圖 -->
+    <div class="top-wrap">
+      <div class="continer">
+        <div class="pic1">
+          <img src="../img/activity-img/top.jpeg" alt="" />
+        </div>
+        <div class="fixed_btn">
+          <a href="" class="btn-us"
+            ><i class="fa fa-user-circle"></i> 關於我們</a
+          >
+          <a href="" class="btn-nav"><i class="fas fa-mountain"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region nav 導覽標籤 -->
+
+    <div class="nav-wrap">
+      <div class="nav-top">
+        <img src="../img/background/nav_top.png" />
+      </div>
+      <div class="nav-icon1">
+        <a href="../index.html">
+          <img src="../img/LOGO.png" />
+        </a>
+        <h2>OUTDOOR</h2>
+      </div>
+      <div class="nav-list">
+        <a class="item-a" id="item" href="../pages/camp.html"
+          ><div class="item-continer">
+            <div class="item-img">
+              <img class="img" id="img" src="../img/img/camp.png" alt="" />
+              <img
+                id="gif"
+                class="gif"
+                src="../img/gif/camp-price1.gif"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <p>設施•費用</p>
+            </div>
+          </div></a
+        >
+        <a class="item-a" id="itemm" href="../pages/rental.html"
+          ><div class="item-continer">
+            <div class="item-img">
+              <img
+                class="img"
+                id="imgg"
+                src="https://hodaigi-camp.jp/wp-content/themes/hodaigi/assets/img/common/gif/camp_rental.png"
+                alt=""
+              />
+              <img
+                id="giff"
+                class="gif"
+                src="../img/gif/camp_rental1.gif"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <p>伴手•商品</p>
+            </div>
+          </div></a
+        >
+        <a class="item-a" id="itemmm" href="../pages/activity.html"
+          ><div class="item-continer">
+            <div class="item-img">
+              <img
+                id="imggg"
+                class="img"
+                src="https://hodaigi-camp.jp/wp-content/themes/hodaigi/assets/img/common/gif/camp_activity.png"
+                alt=""
+              />
+              <img
+                id="gifff"
+                class="gif"
+                src="../img/gif/camp_activity1.gif"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <p>分享•體驗</p>
+            </div>
+          </div></a
+        >
+        <a class="item-a" id="itemmmm" href="../pages/outdoor.html"
+          ><div class="item-continer">
+            <div class="item-img">
+              <img
+                class="img"
+                id="imgggg"
+                src="https://hodaigi-camp.jp/wp-content/themes/hodaigi/assets/img/common/gif/camp_outdoor.png"
+                alt=""
+              /><img
+                id="giffff"
+                class="gif"
+                src="../img/gif/camp_outdoor1.gif"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <p>設施•介紹</p>
+            </div>
+          </div></a
+        >
+        <a class="item-a" id="itemmmmm" href="../pages/spots.html"
+          ><div class="item-continer">
+            <div class="item-img">
+              <img
+                class="img"
+                id="imggggg"
+                src="https://hodaigi-camp.jp/wp-content/themes/hodaigi/assets/img/common/gif/camp_spots.png"
+                alt=""
+              />
+              <img
+                id="gifffff"
+                class="gif"
+                src="../img/gif/camp_spots1.gif"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <p>周邊•觀光</p>
+            </div>
+          </div></a
+        >
+        <a class="item-a" id="itemmmmmm" href="../pages/access.html"
+          ><div class="item-continer">
+            <div class="item-img">
+              <img
+                class="img"
+                id="imgggggg"
+                src="https://hodaigi-camp.jp/wp-content/themes/hodaigi/assets/img/common/gif/camp_access.png"
+                alt=""
+              />
+              <img
+                class="gif"
+                id="giffffff"
+                src="../img/gif/camp_access1.gif"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <p>地理•位置</p>
+            </div>
+          </div></a
+        >
+        <a class="item-a" id="itemmmmmmm" href="../pages/contact.html"
+          ><div class="item-continer">
+            <div class="item-img">
+              <img
+                class="img"
+                id="imggggggg"
+                src="https://hodaigi-camp.jp/wp-content/themes/hodaigi/assets/img/common/gif/camp_contact.png"
+                alt=""
+              />
+              <img
+                id="gifffffff"
+                class="gif"
+                src="../img/gif/camp_contact1.gif"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <p>表單•回饋</p>
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+    <!-- ＃endregion -->
+    <!-- #region 主題「電視換照片」 -->
+    <div class="tv_wrap">
+      <div class="tv-continer">
+        <div class="tv-pic-continer">
+          <div class="tv-inside-pic-continer">
+            <div class="tv-show">
+              <div class="w">
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="i"></div>
+                <div class="h">
+                  <h1>OutDoor Life</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tv-pic-continer">
+          <div class="tv-inside-pic-continer">
+            <div class="tv-show">
+              <div class="m">
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="o"></div>
+                <div class="u">
+                  <h1>Hank</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region  footer-->
+    <div class="footer-wrap">
+      <div class="footer-rock">
+        <img src="../img/background/footer_rock.png" />
+      </div>
+      <div class="footer-plugin">
+        <img src="../img/background/footer_blue.png" />
+      </div>
+      <div class="footer-icon1">
+        <img src="../img/ill/footer_ill.png" />
+      </div>
+      <div class="footer-icon2">
+        <a href="">
+          <img src="../img/ill/ill_flower.png" />
+        </a>
+      </div>
+      <div class="footer-up-continer">
+        <div class="footer-up-table">
+          <div class="footer-up-table-icon">
+            <div class="footerUp-pic-up-continer">
+              <a href="../index.html"><img src="../img/LOGO.png" alt="" /></a>
+            </div>
+            <div class="footerUp-icon-up-continer">
+              <a href="https://twitter.com/PhotosByMoners">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/groups/taiwan.outdoor.exercises.club/"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/gallantoutdoor/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/playlist?list=PLu8tw0R5Tmgia4EMl-TrIGwI9O4SSEBLs"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-up-table-text">
+            <div class="footer-up-table-item">
+              <div class="footer-text-item">
+                <a href="./camp.html"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>設施•費用</span></a
+                >
+              </div>
+              <div class="footer-text-item">
+                <a href="./rental.html"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>伴手•商品</span></a
+                >
+              </div>
+            </div>
+            <div class="footer-up-table-item">
+              <div class="footer-text-item">
+                <a href="./activity.html"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>分享•體驗</span></a
+                >
+              </div>
+              <div class="footer-text-item">
+                <a href="./outdoor.html"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>設施•介紹</span></a
+                >
+              </div>
+            </div>
+            <div class="footer-up-table-item">
+              <div class="footer-text-item">
+                <a href="./spots.html"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>周邊•景觀</span></a
+                >
+              </div>
+              <div class="footer-text-item">
+                <a href="./access.html"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>地理•位置</span></a
+                >
+              </div>
+            </div>
+            <div class="footer-up-table-item">
+              <div class="footer-text-item">
+                <a href="./contact.html"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>表單•回饋</span></a
+                >
+              </div>
+              <div class="footer-text-item">
+                <a href="https://term.ptt.cc/"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>新聞•八卦</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-up-img">
+          <div class="footer-up-pic">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d102198.19452878821!2d139.076596!3d36.82586200000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601e3e538c0e0bad%3A0x2bdbaec5d8d3db36!2z44CSMzc5LTE3MjEg576k6aas55yM5Yip5qC56YOh44G_44Gq44GL44G_55S66Jek5Y6f77yZ77yR77yV4oiS77yR!5e0!3m2!1sja!2sjp!4v1667643586133!5m2!1sja!2sjp"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="footer-up-text">
+          <h4>〒379-1721 群馬県利根郡みなかみ町藤原915-1</h4>
+          <p>TEL　0278-75-2206</p>
+        </div>
+      </div>
+      <div class="footer-down-continer">
+        <div class="footer-down-text">©2021 OUTDOOR露營地</div>
+        <div class="footer-down-text">隱私政策</div>
+        <div class="footer-down-text">回頂部</div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <script src="../js/index.js"></script>
+  </body>
+</html>

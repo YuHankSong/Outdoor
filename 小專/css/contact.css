@@ -1,0 +1,173 @@
+/* --------------------------------------------------- */
+.pic1 {
+  width: 100%;
+  height: 100%;
+}
+.pic1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* animation-name: silder;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; */
+  /* opacity: 0; */
+}
+/* --------------------------------------------------- */
+.tel_wrap {
+  width: 100%;
+  /* background-color: rgb(200, 255, 0); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3vw;
+  padding-bottom: 5vw;
+}
+.tel_continer {
+  width: 80%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 1vw;
+  /* background-color: rgb(233, 146, 146); */
+}
+.tel_continer p {
+  font-size: 2vw;
+}
+.tel_inner {
+  margin-top: 1vw;
+  display: flex;
+  font-size: 3vw;
+  background-color: #fff;
+  justify-content: center;
+}
+.tel_inner_table {
+  display: flex;
+  border-radius: 20px;
+  border: 1px solid rgb(220, 215, 215);
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.tel_inner_left {
+  padding: 2vw 4vw;
+  background-color: rgba(36, 132, 113, 1);
+  /* border: 1px solid rgba(242, 239, 235, 1); */
+}
+.tel_inner_right {
+  padding: 2vw 4vw;
+  background-color: rgba(242, 239, 235, 1);
+  /* border: 1px solid rgba(242, 239, 235, 1); */
+}
+/* 意見回饋表----------------------------------------- */
+.Q_wrap {
+  width: 100%;
+  margin-top: 5vw;
+  /* background-color: rgb(185, 110, 110); */
+}
+.Q_continer {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+}
+.Q_continer p {
+  color: rgb(190, 0, 0);
+  text-align: end;
+  font-weight: 600;
+  font-size: small;
+}
+.Q_table {
+  width: 100%;
+  text-align: left;
+  /* background-color: rgb(99, 243, 118); */
+  /* text-indent: initial; */
+}
+tr {
+  /* border-top: 1px solid rgb(176, 153, 153);
+  border-bottom: 1px dotted rgb(182, 163, 163); */
+  padding-bottom: 2vw;
+  background: url(https://hodaigi-camp.jp/wp-content/themes/hodaigi/assets/img/common/bg_dots.png)
+    repeat-x 100% 0 / auto 2px;
+}
+th {
+  width: 30%;
+  font-size: 1.5vw;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /* line-height: 1.2; */
+}
+tr:nth-child(6) {
+  vertical-align: top;
+}
+tr:nth-child(6) th {
+  padding-top: 3vw;
+}
+tr:nth-child(6) td {
+  padding-top: 2vw;
+}
+td input {
+  /* appearance: none; */
+  /* text-align: center; */
+  height: 3vw;
+  width: 20vw;
+  border-radius: 15px;
+  border: 0px solid #fff;
+  padding: 0 8px;
+  /* outline: 0; */
+  letter-spacing: 1px;
+  color: rgb(22, 105, 95);
+  font-weight: 600;
+  background: rgba(45, 45, 45, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+td textarea {
+  /* appearance: none; */
+  /* text-align: center; */
+  height: 15vw;
+  width: 35vw;
+  border-radius: 15px;
+  border: 0px solid #fff;
+  padding: 0 8px;
+  /* outline: 0; */
+  letter-spacing: 1px;
+  color: rgb(22, 105, 95);
+  font-weight: 600;
+  background: rgba(45, 45, 45, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1) inset;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+/* .form_terms_continer { */
+/* padding-top: 2vw; */
+/* } */
+.form_terms_continer dt {
+  font-size: 2vw;
+  font-weight: 600;
+  margin-top: 2vw;
+}
+.form_terms_continer dd {
+  font-size: 1vw;
+  text-align: start;
+}
+.from_agree_continer {
+  margin-top: 2vw;
+}
+.from_submit {
+  margin-top: 2vw;
+  /* background-color: rgb(189, 76, 76); */
+}
+.from_submit input {
+  width: 4vw;
+  height: 2vw;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.from_submit input:hover {
+  background-color: cadetblue;
+  color: #fff;
+}

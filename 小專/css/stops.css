@@ -1,0 +1,105 @@
+* {
+  text-decoration: none;
+}
+
+/* --------------------------------------------------- */
+.pic1 {
+  width: 100%;
+  height: 100%;
+}
+.pic1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* animation-name: silder;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; */
+  /* opacity: 0; */
+}
+/* --------------------------------------------------- */
+.spots_wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, #0f4667, white);
+}
+.spots_continter {
+  width: 95%;
+  height: 70%;
+  /* background-color: rgb(219, 147, 147); */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  position: relative;
+}
+.card_content {
+  /* background-color: #fff; */
+  /* padding: 0 1vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+  width: 90%;
+  height: 20%;
+  padding-right: 1.4vw;
+  padding-bottom: 1.3vw;
+}
+.card {
+  width: 23%;
+  height: 90%;
+  /* position: relative; */
+  display: flex;
+  align-items: end;
+  list-style: none;
+  object-fit: cover;
+  background-color: rgb(137, 201, 77);
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.card1 {
+  background-image: url(../img/view/view1.png);
+  transition: filter 200ms linear, transform 200ms linear;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  /* color: brown; */
+}
+.card p {
+  font-size: 1vw;
+}
+.card h3 {
+  font-size: 1.9vw;
+}
+
+.card2 {
+  background-image: url(../img/view/view2.jpeg);
+  transition: filter 200ms linear, transform 200ms linear;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  /* color: rgb(255, 255, 255); */
+}
+
+.card3 {
+  background-image: url(../img/view/view3.jpeg);
+  transition: filter 200ms linear, transform 200ms linear;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  /* color: rgb(167, 165, 26); */
+}
+
+.card4 {
+  background-image: url(../img/view/view4.webp);
+  transition: filter 200ms linear, transform 200ms linear;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  /* color: rgb(0, 0, 0); */
+}
+.spots_continter:hover > .card:not(:hover) {
+  filter: brightness(1) saturate(0) contrast(1.2) blur(20px);
+}
+.card:hover {
+  transform: scale(1.05) translateZ(0);
+}

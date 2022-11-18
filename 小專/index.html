@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OutDoor</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/558a93c615.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./_js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./_css/animate.css" />
+    <link rel="stylesheet" href="/_css/loading.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+  </head>
+  <body>
+    <!-- #region 最上面輪播圖跟左上sticky btn 白色覆蓋圖 -->
+    <div class="top-wrap">
+      <div class="continer">
+        <div class="pic">
+          <img src="./img/fire.jpg" alt="" />
+          <img src="./img/camp.png" alt="" />
+          <img src="./img/camp1.jpeg" alt="" />
+          <img src="./img/camp4.jpeg" alt="" />
+        </div>
+        <div class="fixed_btn">
+          <a href="" class="btn-us"
+            ><i class="fa fa-user-circle"></i> 關於我們</a
+          >
+          <a href="" class="btn-nav"><i class="fas fa-mountain"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region nav 導覽標籤 -->
+
+    <div class="nav-wrap">
+      <div class="nav-top">
+        <img src="./img/background/nav_top.png" />
+      </div>
+      <div class="nav-icon1">
+        <a href="../index.html">
+          <img src="../img/LOGO.png" />
+        </a>
+        <h2>OUTDOOR</h2>
+      </div>
+      <div class="nav-list">
+        <a class="item-a" id="item" href="./pages/camp.html"
+          ><div class="item-continer">
+            <div class="item-img">
+              <img class="img" id="img" src="./img/img/camp.png" alt="" />
+              <img
+                id="gif"
+                class="gif"
+                src="./img/gif/camp-price1.gif"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <p>設施•費用</p>
+            </div>
+          </div></a
+        >
+        <a class="item-a" id="itemm" href="./pages/rental.html"
+          ><div class="item-continer">
+            <div class="item-img">
+              <img
+                class="img"
+                id="imgg"
+                src="https://hodaigi-camp.jp/wp-content/themes/hodaigi/assets/img/common/gif/camp_rental.png"
+                alt=""
+              />
+              <img
+                id="giff"
+                class="gif"
+                src="./img/gif/camp_rental1.gif"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <p>伴手•商品</p>
+            </div>
+          </div></a
+        >
+        <a class="item-a" id="itemmm" href="./pages/activity.html"
+          ><div class="item-continer">
+            <div class="item-img">
+              <img
+                id="imggg"
+                class="img"
+                src="https://hodaigi-camp.jp/wp-content/themes/hodaigi/assets/img/common/gif/camp_activity.png"
+                alt=""
+              />
+              <img
+                id="gifff"
+                class="gif"
+                src="./img/gif/camp_activity1.gif"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <p>分享•體驗</p>
+            </div>
+          </div></a
+        >
+        <a class="item-a" id="itemmmm" href="./pages/outdoor.html"
+          ><div class="item-continer">
+            <div class="item-img">
+              <img
+                class="img"
+                id="imgggg"
+                src="https://hodaigi-camp.jp/wp-content/themes/hodaigi/assets/img/common/gif/camp_outdoor.png"
+                alt=""
+              /><img
+                id="giffff"
+                class="gif"
+                src="./img/gif/camp_outdoor1.gif"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <p>設施•介紹</p>
+            </div>
+          </div></a
+        >
+        <a class="item-a" id="itemmmmm" href="./pages/spots.html"
+          ><div class="item-continer">
+            <div class="item-img">
+              <img
+                class="img"
+                id="imggggg"
+                src="https://hodaigi-camp.jp/wp-content/themes/hodaigi/assets/img/common/gif/camp_spots.png"
+                alt=""
+              />
+              <img
+                id="gifffff"
+                class="gif"
+                src="./img/gif/camp_spots1.gif"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <p>周邊•觀光</p>
+            </div>
+          </div></a
+        >
+        <a class="item-a" id="itemmmmmm" href="./pages/access.html"
+          ><div class="item-continer">
+            <div class="item-img">
+              <img
+                class="img"
+                id="imgggggg"
+                src="https://hodaigi-camp.jp/wp-content/themes/hodaigi/assets/img/common/gif/camp_access.png"
+                alt=""
+              />
+              <img
+                class="gif"
+                id="giffffff"
+                src="./img/gif/camp_access1.gif"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <p>地理•位置</p>
+            </div>
+          </div></a
+        >
+        <a class="item-a" id="itemmmmmmm" href="./pages/contact.html"
+          ><div class="item-continer">
+            <div class="item-img">
+              <img
+                class="img"
+                id="imggggggg"
+                src="https://hodaigi-camp.jp/wp-content/themes/hodaigi/assets/img/common/gif/camp_contact.png"
+                alt=""
+              />
+              <img
+                id="gifffffff"
+                class="gif"
+                src="./img/gif/camp_contact1.gif"
+                alt=""
+              />
+            </div>
+            <div class="item-text">
+              <p>表單•回饋</p>
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+    <!-- ＃endregion -->
+    <!-- #region note 天氣注意事項 -->
+    <div class="note-wrap">
+      <div class="note-icon1">
+        <img src="./img/ill/ill_man.png" />
+      </div>
+      <div class="note-icon2">
+        <img src="./img/ill/ill_boy.png" />
+      </div>
+      <div class="note-icon3">
+        <img src="./img/ill/ill_bird.png" />
+      </div>
+      <div class="note-continer">
+        <div class="left-note">
+          <a href=""
+            ><div class="note-text1">
+              <h1>秋季舉辦的『Hodaigi直升機之旅』</h1>
+            </div></a
+          >
+          <a href="" class="left-note-textMargin"
+            ><div class="note-text2">
+              <p>2022 年秋季的預約已經結束。</p>
+            </div></a
+          >
+        </div>
+        <div class="right-note">
+          <div class="right-note-h4">
+            <h4>今天的露營地 11.17 星期四</h4>
+          </div>
+          <div class="right-note-p">
+            <p>
+              天氣 : <span style="color: rgb(216, 95, 86)">晴天</span> 溫度 :
+              <span style="color: rgb(216, 95, 86)">23°C/26°C</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region CAMP-介紹露營地--- -->
+    <div class="camp-wrap">
+      <div class="camp-top">
+        <img src="./img/background/camp_top.png" />
+      </div>
+      <div class="camp-camp">
+        <h1>CAMP</h1>
+      </div>
+      <div class="camp-icon1">
+        <img src="./img/ill/ill_tree01.png" />
+      </div>
+      <div class="camp-icon2">
+        <img src="./img/ill/ill_tree02.png" />
+      </div>
+      <div class="camp-icon3">
+        <img src="./img/ill/ill_tree03.png" />
+      </div>
+      <div class="camp-icon4">
+        <img src="./img/ill/ill_tree04.png" />
+      </div>
+      <div class="camp-woman">
+        <img src="./img/ill/ill_woman.png" />
+      </div>
+      <div class="camp-icon5">
+        <img src="./img/ill/ill_tent.png" />
+      </div>
+      <div class="camp-continer">
+        <div class="camp-text">
+          <div class="camp-text-h3">
+            <h3>
+              標高1,000ｍの県下最大級の<br />
+              ビッグファミリーキャンプ場！
+            </h3>
+          </div>
+          <div class="camp-text-p">
+            <p>
+              露營地位於台灣100名小百岳之一的高山西側海拔1000m，即使在盛夏也能吹來涼爽的微風。
+              您可以在汽車露營地、免費帳篷地、平房、別墅等住宿，同時感受奧根的偉大自然。
+            </p>
+          </div>
+        </div>
+        <div class="camp-img">
+          <img class="cmapimg" src="./img/joe-1.webp" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- ＃endregion -->
+    <!-- #region MAP介紹營區 -->
+    <div class="map-wrap">
+      <div class="map-top">
+        <img src="./img/background/map_top.png" />
+      </div>
+      <div class="map-icon1">
+        <img src="./img/ill/ill_height.png" />
+      </div>
+      <div class="map-icon2">
+        <img src="./img/ill/ill_height2_sp.png" />
+      </div>
+      <div class="map-icon3">
+        <img src="./img/ill/ill_height3.png" />
+      </div>
+      <div class="map-light1">
+        <img src="./img/ill/ill_light-left_sp.png" />
+      </div>
+      <div class="map-light2">
+        <div>
+          <img src="./img/ill/ill_light-right1_sp.png" />
+        </div>
+      </div>
+      <div class="map-light3">
+        <img src="./img/ill/ill_lamp.png" />
+      </div>
+      <div class="map-text1">
+        <img src="./img/ill/ill_parts.png" />
+      </div>
+      <div class="map-map">
+        <h1>MAP</h1>
+      </div>
+      <div class="map-text2">
+        <img src="./img/ill/ill_parts.png" />
+      </div>
+      <div class="map-continer">
+        <div class="map-mid">
+          <div class="map-pic">
+            <img src="./img/map_modal.jpeg" alt="" />
+          </div>
+          <div class="map-text">
+            <!-- <div class="map-text-h4"> -->
+            <h4>查看地圖並創建自己的<br />想像一個露營計劃</h4>
+            <!-- </div> -->
+            <!-- <div class="map-text-p"> -->
+            <p>
+              群馬水上寶台木露營地
+              一邊查看設施地圖，一邊想出適合您露營風格的有趣露營計劃，無論是家庭、團體還是單人。
+            </p>
+            <!-- </div> -->
+            <div class="map-a">
+              <a href=""
+                ><i
+                  class="fas fa-arrow-alt-circle-right"
+                  style="color: #f3da35"
+                ></i
+                >查看場地詳細地圖</a
+              >
+              <a href="https://www.youtube.com/watch?v=jjAQ5bv5UOY"
+                ><i
+                  class="fas fa-arrow-alt-circle-right"
+                  style="color: #f3da35"
+                ></i
+                >臨場感音樂</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region new 新聞播報 -->
+    <div class="new-wrap">
+      <div class="new-icon1">
+        <img src="./img/ill/ill_sleep.png" />
+      </div>
+      <div class="new-icon2">
+        <img src="./img/ill/ill_sleep2.png" />
+      </div>
+      <div class="new-icon3">
+        <img src="./img/ill/ill_kanban.png" />
+      </div>
+      <div class="new-icon4">
+        <div>
+          <img src="./img/ill/ill_normal-mountain.png" />
+        </div>
+      </div>
+      <div class="new-icon5">
+        <img src="./img/ill/ill_sleep3.png" />
+      </div>
+      <div class="new-top">
+        <img src="./img/background/new_top.png" />
+      </div>
+      <div class="new-continer">
+        <div class="new-up-continer">
+          <div class="new-up-pic">
+            <img src="./img/ill/ill_tent.png" alt="" />
+          </div>
+          <div class="new-up-text">
+            <h3>STARY</h3>
+            <p>休息區</p>
+          </div>
+        </div>
+        <div class="new-down-continer">
+          <div class="new-down-pic">
+            <img src="./img/relax.jpeg" alt="" />
+          </div>
+          <div class="new-down-text">
+            <p>
+              擁有 105 個汽車露營地和 50
+              多個免費帳篷營地，有多種方式可以享受廣闊的群馬水上寶台木露營地。
+              露營地配有投幣式淋浴和洗浴設施。
+            </p>
+          </div>
+          <div class="new-btn">
+            <a href="">詳情看</a>
+          </div>
+        </div>
+      </div>
+      <div class="new-continer">
+        <div class="new-up-continer">
+          <div class="new-up-pic">
+            <img
+              src="https://hodaigi-camp.jp/wp-content/themes/hodaigi/assets/img/common/gif/camp_rental.png"
+              alt=""
+            />
+          </div>
+          <div class="new-up-text">
+            <h3>STARY</h3>
+            <p>美食區</p>
+          </div>
+        </div>
+        <div class="new-down-continer">
+          <div class="new-down-pic">
+            <img src="./img/food.jpeg" alt="" />
+          </div>
+          <div class="new-down-text">
+            <p>
+              擁有 105 個汽車露營地和 50
+              多個免費帳篷營地，有多種方式可以享受廣闊的群馬水上寶台木露營地。
+              露營地配有投幣式淋浴和洗浴設施。
+            </p>
+          </div>
+          <div class="new-btn">
+            <a href="">詳情看</a>
+          </div>
+        </div>
+      </div>
+      <div class="new-continer">
+        <div class="new-up-continer">
+          <div class="new-up-pic">
+            <img
+              src="https://hodaigi-camp.jp/wp-content/themes/hodaigi/assets/img/common/gif/camp_activity.png"
+              alt=""
+            />
+          </div>
+          <div class="new-up-text">
+            <h3>STARY</h3>
+            <p>育樂區</p>
+          </div>
+        </div>
+        <div class="new-down-continer">
+          <div class="new-down-pic">
+            <img src="./img/canping.jpeg" alt="" />
+          </div>
+          <div class="new-down-text">
+            <p>
+              擁有 105 個汽車露營地和 50
+              多個免費帳篷營地，有多種方式可以享受廣闊的群馬水上寶台木露營地。
+              露營地配有投幣式淋浴和洗浴設施。
+            </p>
+          </div>
+          <div class="new-btn">
+            <a href="">詳情看</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region 戶外活動介紹outdoor-->
+    <div class="outdoor-wrap">
+      <div class="outdoor-top">
+        <img src="./img/background/outdoor_top.png" />
+      </div>
+      <div class="outdoor-continer">
+        <div class="outdoor-left">
+          <div class="outdoor-text">
+            <div class="outdoor-text-h3">
+              <h3>OUTDOOR SPORTS</h3>
+            </div>
+            <div class="outdoor-text-p">
+              <p>
+                水上町以其蓬勃發展的戶外運動而聞名。在群馬水上寶台木露營地住宿的同時，您可以享受漂流、峽谷漂流、劃獨木舟、SUP、山地自行車、四輪越野車等。
+              </p>
+            </div>
+            <div class="outdoor-text-btn">
+              <a href=""><div>點擊這裡進行戶外運動</div></a>
+            </div>
+          </div>
+        </div>
+        <div class="outdoor-right">
+          <div class="outdoor-right-continer-one">
+            <div class="outdoor-right-img">
+              <img src="./img/outdoor-boat/boat1.png" alt="" />
+            </div>
+            <div class="outdoor-right-h3">
+              <h3>RAFTING</h3>
+            </div>
+            <div class="outdoor-right-p">
+              <p>泛舟漂流</p>
+            </div>
+          </div>
+          <div class="outdoor-right-continer-two">
+            <div class="outdoor-right-img">
+              <img src="./img/outdoor-boat/boat2.jpeg" alt="" />
+            </div>
+            <div class="outdoor-right-h3">
+              <h3>CANOE / KAYAK</h3>
+            </div>
+            <div class="outdoor-right-p">
+              <p>獨木舟/皮划艇</p>
+            </div>
+          </div>
+          <div class="outdoor-right-continer-one">
+            <div class="outdoor-right-img">
+              <img src="./img/outdoor-boat/boat3.webp" alt="" />
+            </div>
+            <div class="outdoor-right-h3">
+              <h3>CANYONING</h3>
+            </div>
+            <div class="outdoor-right-p">
+              <p>峽谷朔溪</p>
+            </div>
+          </div>
+          <div class="outdoor-right-continer-two">
+            <div class="outdoor-right-img">
+              <img src="./img/outdoor-boat/boat4.jpeg" alt="" />
+            </div>
+            <div class="outdoor-right-h3">
+              <h3>SAND-BUGGY</h3>
+            </div>
+            <div class="outdoor-right-p">
+              <p>越野沙灘車</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region tourist 觀光景點介紹-->
+    <div class="tourist-wrap">
+      <div class="tourist-icon1">
+        <img src="./img/ill/ill_kayak.png" />
+      </div>
+      <div class="tourist-icon2">
+        <img src="./img/ill/bg_sopt.png" />
+      </div>
+      <div class="tourist-top">
+        <img src="./img/background/tourist_top.png" />
+      </div>
+      <div class="tourist-continer">
+        <div class="tourist-middle">
+          <div class="tourist-left">
+            <div class="tourist-pic">
+              <div class="tourist-icon">
+                <img src="./img/icon/spot_onsen-pin.png" alt="" />
+              </div>
+              <img src="./img/tourist/spa.jpeg" alt="" />
+              <div class="tourist-text">
+                <p>寶川溫泉</p>
+              </div>
+            </div>
+            <div class="tourist-pic">
+              <div class="tourist-icon">
+                <img src="./img/icon/spot_taki-pin.png" alt="" />
+              </div>
+              <img src="./img/tourist/waterfall.jpeg" alt="" />
+              <div class="tourist-text">
+                <p>高千穗峽</p>
+              </div>
+            </div>
+            <div class="tourist-pic">
+              <div class="tourist-icon">
+                <img src="./img/icon/spot_damu-pin.png" alt="" />
+              </div>
+              <img src="./img/tourist/reservoir.jpeg" alt="" />
+              <div class="tourist-text">
+                <p>八場水庫</p>
+              </div>
+            </div>
+          </div>
+          <div class="tourist-right">
+            <div class="tourist-right-text">
+              <h3>台灣日本推薦百大熱門景點</h3>
+              <div class="tourist-right-btn">
+                <a class="tourist-btn" href=""
+                  ><div>點擊這裡在周邊地區觀光</div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- #endregion -->
+    <!-- #region activity 活動通知 -->
+    <div class="activity-wrap">
+      <div class="activity-top">
+        <img src="./img/background/activity_top.png" />
+      </div>
+      <div class="activity-bottom">
+        <img src="./img/background/activity_bottom.png" />
+      </div>
+      <div class="activity-continer">
+        <div class="activity-left-continer">
+          <div class="activity-left-text">
+            <h2>活動 / 通知</h2>
+          </div>
+        </div>
+        <div class="activity-right-continer">
+          <div class="activity-right-text">
+            <div class="activity-right-span">
+              <a href="https://www.ispan.com.tw/longterm/JMFUENT">
+                <p>2022.11.17</p>
+                <span>秋天的季活動「舞動創新全端新科技」開始囉</span>
+              </a>
+            </div>
+            <div class="activity-right-span">
+              <a href="https://www.ispan.com.tw/longterm/JMFUENT">
+                <p>2022.11.17</p>
+                <span>秋天的季活動「舞動創新全端新科技」開始囉</span>
+              </a>
+            </div>
+            <div class="activity-right-span">
+              <a href="https://www.ispan.com.tw/longterm/JMFUENT">
+                <p>2022.11.17</p>
+                <span>秋天的季活動「舞動創新全端新科技」開始囉</span>
+              </a>
+            </div>
+            <div class="activity-right-btn">
+              <div>
+                <a href="https://www.ispan.com.tw/longterm/JMFUENT">
+                  <i
+                    class="fas fa-arrow-alt-circle-right"
+                    style="color: #277321"
+                  ></i>
+                  <p>點擊這裡查看活動列表</p></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- #endregion -->
+    <!-- #region 大圖片 如果有時間在做 parallax視覺錯位效果 -->
+    <div class="parallax-wrap">
+      <div class="parallax-continer">
+        <div class="parallax-pic">
+          <img src="./img/parallax/bigimg.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- #endregion -->
+    <!-- #region  footer-->
+    <div class="footer-wrap">
+      <div class="footer-rock">
+        <img src="./img/background/footer_rock.png" />
+      </div>
+      <div class="footer-plugin">
+        <img src="./img/background/footer_blue.png" />
+      </div>
+      <div class="footer-icon1">
+        <img src="./img/ill/footer_ill.png" />
+      </div>
+      <div class="footer-icon2">
+        <a href="#">
+          <img src="./img/ill/ill_flower.png" />
+        </a>
+      </div>
+      <div class="footer-up-continer">
+        <div class="footer-up-table">
+          <div class="footer-up-table-icon">
+            <div class="footerUp-pic-up-continer">
+              <a href=""><img src="./img/LOGO.png" alt="" /></a>
+            </div>
+            <div class="footerUp-icon-up-continer">
+              <a href="https://twitter.com/PhotosByMoners">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/groups/taiwan.outdoor.exercises.club/"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/gallantoutdoor/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/playlist?list=PLu8tw0R5Tmgia4EMl-TrIGwI9O4SSEBLs"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-up-table-text">
+            <div class="footer-up-table-item">
+              <div class="footer-text-item">
+                <a href="./pages/camp.html"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>設施•費用</span></a
+                >
+              </div>
+              <div class="footer-text-item">
+                <a href="./pages/rental.html"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>伴手•商品</span></a
+                >
+              </div>
+            </div>
+            <div class="footer-up-table-item">
+              <div class="footer-text-item">
+                <a href="./pages/activity.html"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>分享•體驗</span></a
+                >
+              </div>
+              <div class="footer-text-item">
+                <a href="./pages/outdoor.html"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>設施•介紹</span></a
+                >
+              </div>
+            </div>
+            <div class="footer-up-table-item">
+              <div class="footer-text-item">
+                <a href="./pages/spots.html"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>周邊•景觀</span></a
+                >
+              </div>
+              <div class="footer-text-item">
+                <a href="./pages/access.html"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>地理•位置</span></a
+                >
+              </div>
+            </div>
+            <div class="footer-up-table-item">
+              <div class="footer-text-item">
+                <a href="./pages/contact.html"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>表單•回饋</span></a
+                >
+              </div>
+              <div class="footer-text-item">
+                <a href="https://term.ptt.cc/"
+                  ><i class="fa-solid fa-circle-chevron-right"></i
+                  ><span>新聞•八卦</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-up-img">
+          <div class="footer-up-pic">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d102198.19452878821!2d139.076596!3d36.82586200000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601e3e538c0e0bad%3A0x2bdbaec5d8d3db36!2z44CSMzc5LTE3MjEg576k6aas55yM5Yip5qC56YOh44G_44Gq44GL44G_55S66Jek5Y6f77yZ77yR77yV4oiS77yR!5e0!3m2!1sja!2sjp!4v1667643586133!5m2!1sja!2sjp"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="footer-up-text">
+          <h4>〒379-1721 群馬県利根郡みなかみ町藤原915-1</h4>
+          <p>TEL　0278-75-2206</p>
+        </div>
+      </div>
+      <div class="footer-down-continer">
+        <div class="footer-down-text">©2021 OUTDOOR露營地</div>
+        <div class="footer-down-text">隱私政策</div>
+        <div class="footer-down-text">回頂部</div>
+      </div>
+    </div>
+    <!-- #endregion -->
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
